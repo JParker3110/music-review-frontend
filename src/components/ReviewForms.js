@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import supabase from '../utils/supabaseClient';
+// import StarRating from './StarRating';
 
 const ReviewForm = () => {
   const location = useLocation();
-  const { songLink, songTitle, songRating } = location.state || {};
+  const { songLink, songTitle } = location.state || {};
   const [review, setReview] = useState('');
-  const [rating, setRating] = useState(songRating || 0);
+  const [rating,] = useState(0);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -21,12 +22,7 @@ const ReviewForm = () => {
     <div>
       <h2>Add a Review for {songTitle}</h2>
       <form onSubmit={handleSubmit}>
-        <input
-          type="number"
-          value={rating}
-          onChange={(e) => setRating(e.target.value)}
-          placeholder="Rating (0-5)"
-        />
+        {/* <StarRating rating={rating} onRatingChange={setRating} /> */}
         <textarea
           value={review}
           onChange={(e) => setReview(e.target.value)}

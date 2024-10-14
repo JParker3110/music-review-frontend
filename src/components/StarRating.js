@@ -1,4 +1,3 @@
-// src/components/StarRating.js
 import React, { useState } from 'react';
 
 const StarRating = ({ rating, onRatingChange }) => {
