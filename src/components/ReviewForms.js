@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import supabase from '../utils/supabaseClient';
-// import StarRating from './StarRating';
+
 
 const ReviewForm = () => {
   const location = useLocation();

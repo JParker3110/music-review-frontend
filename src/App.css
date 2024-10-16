@@ -1,16 +1,16 @@
-/* src/App.css */
+
 .App {
   text-align: center;
   font-family: 'sans-serif';
-  background-color: #941389;
+  /* background-color: #941389; */
   color: #f59a11;
 }
 
-.App-header {
+/* .App-header {
   background-color: #f32155;
   padding: 20px;
   color: rgb(8, 17, 26);
-}
+} */
 
 .App-header h1 {
   font-size: 2.5em;
@@ -25,11 +25,19 @@ main {
   padding: 20px;
 }
 
-footer {
+
+
+body {
+  background-image: url('https://png.pngtree.com/thumb_back/fh260/back_our/20190620/ourmid/pngtree-creative-headset-song-king-competition-poster-background-material-image_153272.jpg');
+            background-size: cover;
+            background-position: center;
+}
+
+/* footer {
   background-color: #282c34;
   color: white;
   padding: 10px;
-  /* position: fixed; */
+  position: fixed;
   width: 100%;
   bottom: 0;
-}
+} */

@@ -20,7 +20,7 @@ const ReviewPage = ({ match }) => {
   }, [match.params.id]);
 
   const handleCommentSubmit = async () => {
-    // Save comment to your backend
+   
     setComments([...comments, newComment]);
     setNewComment('');
   };

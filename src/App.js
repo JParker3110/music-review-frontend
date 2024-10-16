@@ -6,10 +6,10 @@ import './App.css';
 import Song from './components/Song';
 
 function App() {
-  const backendUrl = 'https://your-backend-url.vercel.app'; // Replace with your actual backend URL
+  const backendUrl = 'https://music-review-app.vercel.app'
 
   const handleHomepageClick = () => {
-    fetch(`${backendUrl}/homepage`)
+    fetch(`${backendUrl}/api/homepage`)
       .then(response => response.json())
       .then(data => {
         console.log('Homepage data:', data);
@@ -20,7 +20,7 @@ function App() {
   };
 
   const handleMusicClick = () => {
-    fetch(`${backendUrl}/music`)
+    fetch(`${backendUrl}/api/music`)
       .then(response => response.json())
       .then(data => {
         console.log('Music data:', data);

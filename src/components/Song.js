@@ -1,4 +1,4 @@
-// src/components/Song.js
+
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Spotify } from 'react-spotify-embed';
